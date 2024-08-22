@@ -9,15 +9,19 @@ public class Main {
     }
 
     static void ej1(){
-        Juego vidas1 = new Juego();
-        Juego vidas2 = new Juego();
+        Juego vidas1 = new Juego(5);
+        Juego vidas2 = new Juego(5);
 
-        vidas1.setVidas(5);
+        //vidas1.setVidas(5);
         System.out.println(vidas1.getVidasRestantes());
-        vidas1.setVidas(vidas1.getVidasRestantes() - 1);
+        System.out.println("Quedan vidas: " + vidas1.QuitarVida());
         System.out.println(vidas1.getVidasRestantes());
 
         System.out.println("Vidas 1: " + vidas1.getVidasRestantes() + " Vidas 2: " + vidas2.getVidasRestantes());
+
+        while (vidas1.getVidasRestantes() > 0){
+            System.out.println("Quedan vidas: " + vidas1.QuitarVida() + " Vidas: " + vidas1.getVidasRestantes());
+        }
 
     }
 
