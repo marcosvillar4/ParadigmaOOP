@@ -23,6 +23,14 @@ public class Main {
             System.out.println("Quedan vidas: " + vidas1.QuitarVida() + " Vidas: " + vidas1.getVidasRestantes());
         }
 
+        vidas1.reiniciaPartida();
+
+        System.out.println("_______________________________");
+
+        while (vidas1.getVidasRestantes() > 0){ // Empieza con 4 porque primero se llama quitar y despues se llama getVidas
+            System.out.println("Quedan vidas: " + vidas1.QuitarVida() + " Vidas: " + vidas1.getVidasRestantes());
+        }
+
     }
 
 }
