@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args){
 
+        ej1();
+
+    }
+
+    static void ej1(){
         Juego vidas1 = new Juego();
         Juego vidas2 = new Juego();
 
